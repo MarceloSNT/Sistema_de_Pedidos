@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.imagens{
+    height: 200px;
+    width: 100%;
+}
+.imgLogo{
+    height: 60px;
+    width: 60px;
+}
+
+.card{
+    height: 400px;
+}
