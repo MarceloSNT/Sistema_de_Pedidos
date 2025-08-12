@@ -12,3 +12,46 @@
 .card{
     height: 400px;
 }
+
+.slider{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+  display: flex;
+  width: calc(200px * 10);
+  animation: slide 25s infinite;
+}
+
+.slider .slide{
+    width: 100vw;
+}
+
+.slider .slide img{
+    width: 100vw;
+    height: 50vh;
+}
+footer li{
+    text-decoration: none;
+    list-style: none;
+}
+
+@keyframes slide {
+  /* Imagem 1 visível por 5s (0%–16.66%), depois 1s de transição (até 20%) e assim por diante*/
+  0%, 16.66% { transform: translateX(0); }
+  20%, 36.66% { transform: translateX(-100vw); } 
+  40%, 56.66% { transform: translateX(-200vw); }
+  60%, 76.66% { transform: translateX(-300vw); } 
+  80%, 96.66% { transform: translateX(-400vw); } 
+  90% { transform: translateX(-400vw); }
+  80%, -96.66% { transform: translateX(-400vw); } 
+  60%, -76.66% { transform: translateX(-300vw); } 
+  40%, -56.66% { transform: translateX(-200vw); }
+  20%, -36.66% { transform: translateX(-100vw); } 
+  0%, -16.66% { transform: translateX(0); }
+}
+
+
