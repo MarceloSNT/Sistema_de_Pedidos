@@ -27,17 +27,17 @@ function renderizarCardapio(listaProdutos) {
     const card = document.createElement("div");
     card.className = "col-12 col-md-6 col-lg-4 mb-3";
     card.innerHTML = `
-      <div class="card pb-3 border border-2 border-warning rounded-3">
+      <div class="card pb-3 border border-2 bg-dark text-light border-warning rounded-3">
         <img src="${produto.imagem}" alt="${
       produto.nome
-    }" class="imagens img-fluid card-image-top">
+    }" class="imagens img-fluid card-image-top rounded-top-2">
         <h3 class="card-title text-center">${produto.nome}</h3>
         <h4 class="text-center">R$ ${produto.preco.toFixed(2)}</h4>
         <div class="quantidade-wrapper text-center mb-2">
           <input type="number" class="form-control input-quantidade text-center" min="1" value="1" style="width: 80px; margin: 0 auto;">
         </div>
         <div>
-          <button class="btn btn-outline-warning d-grid mx-auto btn-adicionar">Adicionar ao Carrinho</button>
+          <button data-bs-toggle="modal" data-bs-target="#myModal" class="btnAdd btn btn-outline-warning d-grid mx-auto btn-adicionar">Adicionar ao Carrinho</button>
         </div>
       </div>`;
     mostrarProdutos.appendChild(card);
@@ -66,7 +66,6 @@ function addProdutoCarrinho() {
     }
 
     localStorage.setItem("itens", JSON.stringify(carrinho));
-    alert(`${produto.nome} (Qtd: ${quantidade}) adicionado ao carrinho!`);
   });
 }
 

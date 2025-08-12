@@ -63,9 +63,14 @@ const carrinhoAtual = JSON.parse(localStorage.getItem("itens")) || [];
       return;
     }
     localStorage.removeItem("itens");
-    alert("Pedido Finalizado com sucesso!");
     total = 0;
     document.getElementById("total").textContent = `R$ ${total.toFixed(2)}`;
+    listarCarrinho();
+});
+document.getElementById("limparCarrinho").addEventListener("click", function() {
+    localStorage.removeItem("itens");
+        total = 0;
+            document.getElementById("total").textContent = `R$ ${total.toFixed(2)}`;
     listarCarrinho();
 });
 

@@ -12,6 +12,11 @@
 .card{
     height: 400px;
 }
+.card:hover{
+    translate: 4px -10px ;
+    box-shadow: -4px 10px 15px #ffc1073f;
+    transition: 0.5s;
+}
 
 .slider{
     width: 100%;
@@ -34,9 +39,10 @@
     width: 100vw;
     height: 50vh;
 }
-footer li{
+a,li{
     text-decoration: none;
     list-style: none;
+    color: #FFC107;
 }
 
 @keyframes slide {
