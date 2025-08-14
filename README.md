@@ -19,5 +19,6 @@ Trabalho front-end do curso fullstack Trier em parceiria com o Senai, visando te
 <li>Limpar carrinho</li>
 <li>Banner automático</li>
 <li>Cadastro simples(sem nenhum tipo de verificação)</li>
+<li>Cálculo automático do total do pedido</li>
 </ul>
 <hr>
