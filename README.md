@@ -13,3 +13,11 @@ Trabalho front-end do curso fullstack Trier em parceiria com o Senai, visando te
 <li>TRELLO</li>
 </ul>
 <hr>
+<h3>Principais Funcionalidades</h3>
+<ul>
+<li>Adicionar produtos ao carrinho definindo quantidade</li>
+<li>Limpar carrinho</li>
+<li>Banner automático</li>
+<li>Cadastro simples(sem nenhum tipo de verificação)</li>
+</ul>
+<hr>
