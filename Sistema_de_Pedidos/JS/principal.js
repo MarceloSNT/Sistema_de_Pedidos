@@ -69,6 +69,11 @@ function addProdutoCarrinho() {
   });
 }
 
+const btnSair = document.getElementById("btnSair");
+btnSair.addEventListener("click", (event) => {
+ localStorage.clear("clientes");
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   renderizarCardapio(cardapioProdutos);
   addProdutoCarrinho();
